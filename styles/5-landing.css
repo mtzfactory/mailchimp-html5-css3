@@ -1,0 +1,249 @@
+* { font-family: sans-serif; box-sizing: border-box; }
+html, body { margin: 0; }
+a.button {
+  display: inline-block;
+  padding: 14px; /* va relacionado con padding top y bottom de 'header nav li' */
+  border-radius: 10px;
+  font-size: 0.80em;
+  color: rgb(249, 250, 245);
+  text-decoration: none;
+}
+.gradient-grey {
+  border: 1px solid rgb(38, 44, 44);
+  background:        -webkit-gradient(rgb(80, 81, 76) 50%, rgb(62, 62, 55) 50%);
+  background: -webkit-linear-gradient(rgb(80, 81, 76) 50%, rgb(62, 62, 55) 50%);
+  background:    -moz-linear-gradient(rgb(80, 81, 76) 50%, rgb(62, 62, 55) 50%);
+  background:      -o-linear-gradient(rgb(80, 81, 76) 50%, rgb(62, 62, 55) 50%);
+  background:     -ms-linear-gradient(rgb(80, 81, 76) 50%, rgb(62, 62, 55) 50%);
+  background:         linear-gradient(rgb(80, 81, 76) 50%, rgb(62, 62, 55) 50%);
+}
+.gradient-red {
+  border: 1px solid rgb(165, 65, 44);
+  background:        -webkit-gradient(rgb(239, 106, 88) 50%, rgb(237, 90, 72) 50%);
+  background: -webkit-linear-gradient(rgb(239, 106, 88) 50%, rgb(237, 90, 72) 50%);
+  background:    -moz-linear-gradient(rgb(239, 106, 88) 50%, rgb(237, 90, 72) 50%);
+  background:      -o-linear-gradient(rgb(239, 106, 88) 50%, rgb(237, 90, 72) 50%);
+  background:     -ms-linear-gradient(rgb(239, 106, 88) 50%, rgb(237, 90, 72) 50%);
+  background:         linear-gradient(rgb(239, 106, 88) 50%, rgb(237, 90, 72) 50%);
+}
+input#search {
+  background: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;
+  background-color: white;
+}
+.flex-fullrow {
+  flex: 1 0 100%; /* [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+}
+.img-max100 { /* truco para que imagen no mas granade que su contenedor */
+  max-width: 100%;
+  height: auto;
+  _object-fit: contain;
+}
+.img-100 {
+  width: 100%;
+}
+
+/*
+ -- header --
+ */
+header {
+  display: block;
+  background-color: rgb(83, 190, 213);
+  padding: 20px 0;
+  margin: 0px;
+  text-align: center;
+}
+.container {
+  display: inline-block;
+  text-align: right;
+}
+.header {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.header nav {
+  display: inline-block;
+  background-color: rgb(209, 239, 244);
+  border-radius: 10px;
+  font-size: 0.80em;
+}
+.header nav ul {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  padding: 0;
+  font-size: 0; /* para ayudar a ajustar altura de los 'li', así los border-right y border-left llegan a los extremos */
+}
+.header nav li {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  padding: 12px 15px; /* top y bottom van relacionados con padding de 'a.button' */
+  border-right: 1px solid rgb(221, 247, 250);
+  border-left: 1px solid rgb(184, 210, 214);
+  list-style-type: none;
+  font-size: 12px;
+}
+.header nav li:first-child {
+  border-left: unset;
+}
+.header nav li:last-child {
+  border-right: unset;
+}
+.header nav li a {
+  color: rgb(43, 45, 40);
+  align-self: center;
+  text-decoration: none;
+}
+.log-in {
+  display: block;
+  color: rgb(249, 250, 245);
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 8px;
+  margin-right: 19px;
+}
+.sign-up {
+  margin-right: 20px;
+}
+.mailchimp-logo {
+  margin-right: 40px;
+}
+
+/*
+ -- monkey section --
+ */
+.monkey {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  justify-content: center;
+  background-color: rgb(83, 190, 213);
+  color: rgb(27, 107, 126);
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgb(54, 152, 160);
+  padding-bottom: 58px; /* va relacionado con el 'top' de la clase '.standing-out', -2px de lineas */
+}
+.monkey > div {
+  flex: 0 0 25em; /* flex-grow: do not grow, flex-shrink: do not shrink, flex-basis: width/height */
+}
+.monkey-banner { margin-right: 10px;  }
+.email-newsletters { margin-top: 40px; }
+
+/*
+ * whats-new section
+ */
+.whats-new {
+  display: block;
+  color: rgb(63, 63, 55);
+  background-color: rgb(208, 212, 211);
+  background-image: url('../images/noisepattern.png');
+  background-repeat: repeat;
+  border-top: 1px solid rgb(250, 253, 255);
+}
+.standing-out {
+  display: block;
+  background-color: rgb(240, 240, 240);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, .15);
+  position: relative;
+  padding: 30px;
+  margin-top: -60px; /* va relacionado con el 'padding' de la clase '.monkey' */
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.standing-out > h1 {
+  margin-top: 0;
+}
+.standing-out > ul {
+  margin: 0;
+  padding: 0;
+}
+.news-list {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 0.70em;
+}
+.news-list > li {
+  list-style-type: none;
+  margin-right: 20px;
+  width: 25%;
+  position: relative;
+}
+.news-list > li:last-of-type {
+  margin-right: unset;
+}
+.news-list h3 {
+  font-size: 0.70em;
+  margin-bottom: 3px;
+}
+.news-list h2 {
+  font-size: 1.1em;
+  margin-top: 3px;
+}
+.learn-more {
+  background-color: rgb(63, 63, 55);
+  color: rgb(200, 200, 196);
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute; /* para que los ':before' coloquen bien la imagen */
+  width: 100%;
+  bottom: 0;
+}
+.learn-more:before {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 13px;
+}
+.learn-more.left-arrow:before {
+  background: url(../images/arrows.png);
+  right: 13px;
+}
+/*
+ -- footer --
+ */
+footer {
+  background-color: rgb(25, 24, 20);
+  color: rgb(127, 126, 122);
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 80px;
+  font-size: 0.75em;
+}
+footer ul {
+  margin: unset;
+  padding: 16px 0;
+}
+footer li {
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+footer li:last-of-type {
+  margin-bottom: unset;
+}
+footer li.title {
+  color: rgb(255, 255, 251);
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+footer small {
+    margin: 40px 0;
+    display: block;
+    text-align: center;
+}
