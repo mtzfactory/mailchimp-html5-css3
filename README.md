@@ -9,4 +9,6 @@ Jugando un poco con HTML5 y CSS3 puro para conseguir el mockup de más abajo, mi
 
  + [mi mailchimp](https://mtzfactory.github.io/html5-css3-challenges/5-landing.html)
 
+Si te sientes aventurero puedes intentarlo, tienes los materiales necesarios en la carpeta ```materials```.
+
 ![mockup](materials/5-landing.jpg)
