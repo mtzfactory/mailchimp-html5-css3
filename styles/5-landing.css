@@ -32,6 +32,10 @@ input#search {
   background-position: right center;
   background-origin: content-box;
   background-color: white;
+  padding: 0 5px;
+  _border-radius: 3px;
+  box-shadow: inset 0 0 1px rgb(108, 112, 111);
+  font-size: 14px;
 }
 .flex-fullrow {
   flex: 1 0 100%; /* [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
@@ -138,7 +142,7 @@ header {
  * whats-new section
  */
 .whats-new {
-  display: block;
+  _display: block;
   color: rgb(63, 63, 55);
   background-color: rgb(208, 212, 211);
   background-image: url('../images/noisepattern.png');
@@ -146,13 +150,13 @@ header {
   border-top: 1px solid rgb(250, 253, 255);
 }
 .standing-out {
-  display: block;
+  _display: block;
   background-color: rgb(240, 240, 240);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, .15);
-  position: relative;
   padding: 30px;
+  position: relative;
   margin-top: -60px; /* va relacionado con el 'padding' de la clase '.monkey' */
   width: 90%;
   margin-right: auto;
