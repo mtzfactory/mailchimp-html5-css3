@@ -3,11 +3,11 @@
 
 ## Full Stack Web Development Bootcamp @Otoño2017
 
-### HTML5 & CSS3 ~ Challenge de marcado HTML y CSS.
+### Mailchimp ~ Challenge de marcado HTML5 y CSS3.
 
 Jugando un poco con HTML5 y CSS3 puro para conseguir el mockup de más abajo, mi solución la puedes ver en:
 
- + [mi mailchimp](https://mtzfactory.github.io/html5-css3-challenges/5-landing.html)
+ + [mailchimp](https://mtzfactory.github.io/mailchimp-html5-css3/5-landing.html)
 
 Si te sientes aventurero puedes intentarlo, tienes los materiales necesarios en la carpeta ```materials```.
 
